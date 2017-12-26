@@ -1,0 +1,244 @@
+body{
+	margin:0;
+	font-family: 'Mukta Malar', sans-serif;
+	position:relative;
+	line-height: 1.5;
+	color:#555e60;
+	background-color: #d6ebf2;
+}
+.header img{
+	padding-top:2%;
+	width:20%;
+}
+.header{
+	text-align:center;
+	margin:auto;
+	position: fixed;
+	background-color: white;
+	z-index: 10;
+	color:#333333;
+}
+.header a{
+	color:#333333;
+	text-decoration: none;
+	font-weight: 100;
+}
+.header_text{
+	line-height: 0.9rem;
+	padding-bottom:1%;
+
+}
+
+.image{
+	background-color:white;
+	padding-top:135px;
+
+}
+.image img{
+	padding-top:1%;
+	padding-left:25%;
+	width:60%;
+}
+.title{
+	
+	text-align: center;
+	color:#151718;
+	letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size:1em;
+}
+.sub_title{
+	font-weight: 600;
+    font-size:1rem;
+	color: #404648;
+	text-decoration: none;
+	
+}
+.skills_category{
+	padding-left: 2%;
+	padding-right:2%;
+
+}
+
+.skills{
+	padding-top:7%;
+	
+}
+.skillz{
+	padding-top:4%;
+	padding-bottom:4%;
+	padding-right:2%;
+	padding-left:2%;
+	display:flex;
+	justify-content: space-around;
+
+
+}
+ul{
+	list-style-type: none;
+	margin:0;
+	padding-top:1rem;
+	padding-bottom: 1rem;
+	padding-left: 0;
+}
+li{
+	
+	font-weight: 300;
+    font-size:1em;
+	margin-top: 3px;
+	margin-bottom:3px;
+}
+
+.projects{	
+	padding-top:7%;
+	margin:0;	
+}
+p{
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-left:3%;
+}
+
+p a{
+	font-weight: 600;
+    font-size:1rem;
+	color: #404648;
+	text-decoration: none;
+}
+a:hover{
+	color:#9ccfe0;
+	font-weight: 700;
+}
+
+
+.rotating-item-wrapper {
+    position: relative;
+    padding-top:170px;
+    margin-bottom: 0%;
+    margin-left:auto;
+    margin-right: auto;
+	width:55vw;
+	border-radius: 50%;
+
+}
+.rotating-item {
+	width:55vw;
+    display: none;
+    margin-bottom: 0%;
+	background-color: white;
+	border-radius: 50%;
+	
+}
+@media screen and (max-width: 970px) and (min-width: 700px) {
+	.rotating-item-wrapper {
+ 		padding-top:150px;
+ 		width: 70vw;
+	}
+	.rotating-item{
+		width:70vw;
+	}
+}
+@media screen and (max-width:800px){
+	.header img{
+	width:30%;
+}
+}
+@media screen and (max-width: 699px)and (min-width: 530px){
+	.rotating-item-wrapper {
+ 		padding-top:130px;
+ 		width: 80vw;
+	}
+	.rotating-item{
+		width:80vw;
+	}
+}
+@media screen and (max-width: 529px){
+	.rotating-item-wrapper {
+ 		padding-top:100px;
+	}
+}
+
+.experiencezz{
+	padding-top:5%;
+}
+.job{
+	padding-left:18%;
+	padding-right:18%;
+	padding-bottom: 2%;
+}
+.job_details{
+	display:flex;
+	justify-content: space-between;
+
+}
+.company a,.project_title,.project_title a{
+	color:#151718;
+    font-weight: 700;
+    font-size:1em;
+    text-decoration: none;
+}
+.company a:hover{
+	color:#9ccfe0;
+
+}
+.project{
+	display:flex;
+	justify-content:space-between;
+}
+
+.one_project{
+	width:60%;
+	margin:auto;
+	padding:2%;
+}
+
+.GitHub a{
+	font-weight: 700;
+	color: #404648;
+	text-decoration: none;
+	margin-left: 3%;
+
+}
+
+.one_project a:hover{
+	color:#9ccfe0;
+	font-weight: 700;
+}
+
+.all_projects{
+	padding-top:2%;
+	padding-bottom:4%;
+}
+
+.resume a{
+	padding-top: 2%;
+	color:#007bff;
+	letter-spacing: 0.1em;
+    font-weight: 800;
+    font-size:1.2rem;
+    text-decoration: none;
+
+}
+
+.resume a:hover{
+	color:#9ccfe0;
+	font-weight: 900;
+}
+
+.GitHub{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
