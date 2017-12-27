@@ -228,6 +228,9 @@ a:hover{
     .category_content{
     	flex-wrap: wrap;
     }
+    .skills_category{
+    	padding-right:15%;
+    }
     .small{
     	display:block;
     	color:#333333;
