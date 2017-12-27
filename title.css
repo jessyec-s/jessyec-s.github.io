@@ -213,7 +213,7 @@ a:hover{
 	.job_details{
 		flex-direction:column;
 	}
-	}
+}
 @media screen and (max-width: 430px){
 	.header img{
 		padding-top:3%;
@@ -282,7 +282,7 @@ a:hover{
 
 .GitHub a{
 	font-weight: 700;
-	color: #404648;
+	color:#3D9FBF;
 	text-decoration: none;
 	margin-left: 3%;
 
