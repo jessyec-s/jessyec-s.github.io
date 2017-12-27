@@ -157,6 +157,12 @@ a:hover{
  		padding-top:100px;
 	}
 }
+@media screen and (max-width:430px){
+	.header img{
+	padding-top:3%;
+	width:60%;
+	}
+}
 
 .experiencezz{
 	padding-top:5%;
