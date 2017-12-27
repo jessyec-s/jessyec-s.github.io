@@ -40,3 +40,8 @@ $(window).load(function() { //start after HTML, images have loaded
     InfiniteRotator.init();
  
 });
+
+$(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
