@@ -226,7 +226,7 @@ a:hover{
     	display:none;
     }
     .category_content{
-    	padding-left: 0%;
+    	flex-wrap: wrap;
     }
     .small{
     	display:block;
