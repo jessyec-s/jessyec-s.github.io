@@ -24,7 +24,7 @@ body{
 	font-weight: 100;
 }
 .header_text{
-	line-height: 0.4rem;
+	line-height: 0.2rem;
 	padding-bottom:1%;
 
 }
@@ -161,6 +161,11 @@ a:hover{
 	.header img{
 		padding-top:3%;
 		width:60%;
+	}
+	.header_text {
+	    line-height: 0.9rem;
+	    padding-bottom: 1%;
+	    padding-top: 1%;
 	}
 }
 
