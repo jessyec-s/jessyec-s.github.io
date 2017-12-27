@@ -198,8 +198,14 @@ a:hover{
 	}
 }
 @media screen and (max-width: 529px){
+
 	.rotating-item-wrapper {
+ 		padding-top:130px;
  		padding-top:100px;
+ 		width: 80vw;
+	}
+	.rotating-item{
+		width:80vw;
 	}
 }
 @media screen and (max-width: 430px){
