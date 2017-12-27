@@ -208,6 +208,12 @@ a:hover{
 		width:80vw;
 	}
 }
+
+@media screen and (max-width:480px){
+	.job_details{
+		flex-direction:column;
+	}
+	}
 @media screen and (max-width: 430px){
 	.header img{
 		padding-top:3%;
