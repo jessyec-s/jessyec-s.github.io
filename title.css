@@ -225,6 +225,9 @@ a:hover{
     .regular{
     	display:none;
     }
+    .category_content{
+    	padding-left: 0%;
+    }
     .small{
     	display:block;
     	color:#333333;
