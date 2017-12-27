@@ -8,7 +8,7 @@ body{
 }
 .header img{
 	padding-top:2%;
-	width:20%;
+	width:15%;
 }
 .header{
 	text-align:center;
@@ -24,7 +24,7 @@ body{
 	font-weight: 100;
 }
 .header_text{
-	line-height: 0.9rem;
+	line-height: 0.4rem;
 	padding-bottom:1%;
 
 }
@@ -157,10 +157,10 @@ a:hover{
  		padding-top:100px;
 	}
 }
-@media screen and (max-width:430px){
+@media screen and (max-width: 430px){
 	.header img{
-	padding-top:3%;
-	width:60%;
+		padding-top:3%;
+		width:60%;
 	}
 }
 
