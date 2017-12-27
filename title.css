@@ -10,6 +10,9 @@ body{
 	padding-top:2%;
 	width:15%;
 }
+.small,.skill_item_two_small,.skill_item_one_small{
+	display:none;
+}
 .header{
 	text-align:center;
 	margin:auto;
@@ -41,38 +44,57 @@ body{
 }
 .title{
 	
-	text-align: center;
 	color:#151718;
 	letter-spacing: 0.1em;
     font-weight: 600;
     font-size:1em;
+    padding-left: 10%;
 }
 .sub_title{
-	font-weight: 600;
+	font-weight: 400;
     font-size:1rem;
-	color: #404648;
+	color: #3D9FBF;
 	text-decoration: none;
 	
 }
-.skills_category{
-	padding-left: 2%;
-	padding-right:2%;
 
-}
 
 .skills{
 	padding-top:7%;
 	
 }
+.skill_item_one{
+	display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    width: 63%;
+}
+.skill_item_two{
+	display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 37%;
+}
+.category_content{
+	display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    flex-grow: 1;
+}
 .skillz{
 	padding-top:4%;
 	padding-bottom:4%;
 	padding-right:2%;
-	padding-left:2%;
+	padding-left: 14%;
 	display:flex;
-	justify-content: space-around;
 
-
+	justify-content: space-evenly;
+}
+.skills_type{
+	color:#245F72;
+	letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size:1em;
 }
 ul{
 	list-style-type: none;
@@ -141,8 +163,31 @@ a:hover{
 @media screen and (max-width:800px){
 	.header img{
 	width:30%;
+	}
+	.skillz{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.skill_item_two{
+		flex-direction: column;
+		width: 87%;
+		justify-content: space-around;
+	}
+	.skill_item_one{
+		flex-direction: column;
+		width:100%;
+		justify-content: space-around;
+	}
+	.category_content{
+
+		justify-content: start;
+	}
+	.skills_category{
+		padding-top:2%;
+		padding-right: 10%;
+	}
 }
-}
+
 @media screen and (max-width: 699px)and (min-width: 530px){
 	.rotating-item-wrapper {
  		padding-top:130px;
@@ -160,13 +205,24 @@ a:hover{
 @media screen and (max-width: 430px){
 	.header img{
 		padding-top:3%;
-		width:60%;
+		width:50%;
 	}
 	.header_text {
-	    line-height: 0.9rem;
+	    line-height: 1.3rem;
 	    padding-bottom: 1%;
-	    padding-top: 1%;
+	    padding-top: 1.5%;
 	}
+	.header_text p{
+		width: 80vw;
+    	margin: auto;
+    }
+    .regular{
+    	display:none;
+    }
+    .small{
+    	display:block;
+    	color:#333333;
+    }
 }
 
 .experiencezz{
@@ -183,7 +239,7 @@ a:hover{
 
 }
 .company a,.project_title,.project_title a{
-	color:#151718;
+	color:#245F72;
     font-weight: 700;
     font-size:1em;
     text-decoration: none;
@@ -223,7 +279,7 @@ a:hover{
 
 .resume a{
 	padding-top: 2%;
-	color:#007bff;
+	color:#3D9FBF;
 	letter-spacing: 0.1em;
     font-weight: 800;
     font-size:1.2rem;
