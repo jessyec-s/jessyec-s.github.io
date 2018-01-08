@@ -14,6 +14,7 @@ body{
 	display:none;
 }
 .header{
+	width:100vw;
 	text-align:center;
 	margin:auto;
 	position: fixed;
@@ -150,6 +151,12 @@ a:hover{
 	background-color: white;
 	border-radius: 50%;
 	
+}
+
+@media screen and (min-width: 1600px) {
+	.rotating_item_wrapper{
+		padding-top:220px;
+	}
 }
 @media screen and (max-width: 970px) and (min-width: 700px) {
 	.rotating-item-wrapper {
