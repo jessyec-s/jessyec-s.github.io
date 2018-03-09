@@ -191,7 +191,7 @@ a:hover{
 		padding-right: 10%;
 	}
 }
-@media screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) {
 	.rotating_item_wrapper{
 		padding-top:220px;
 	}
