@@ -164,7 +164,7 @@ a:hover{
 		width:70vw;
 	}
 }
-@media screen and (max-width:800px){
+@media  screen and (max-width:800px){
 	.header img{
 	width:30%;
 	}
@@ -191,7 +191,11 @@ a:hover{
 		padding-right: 10%;
 	}
 }
-
+@media screen and (min-width: 1600px) {
+	.rotating_item_wrapper{
+		padding-top:220px;
+	}
+}
 @media screen and (max-width: 699px)and (min-width: 530px){
 	.rotating-item-wrapper {
  		padding-top:130px;
