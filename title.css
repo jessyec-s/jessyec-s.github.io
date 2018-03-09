@@ -144,11 +144,7 @@ a:hover{
 	border-radius: 50%;
 
 }
-@media screen and (min-width: 1600px) {
-	.rotating_item_wrapper{
-		padding-top:220px;
-	}
-}
+
 .rotating-item {
 	width:55vw;
     display: none;
