@@ -349,7 +349,7 @@ a:hover{
 	color:#245F72;
 	padding-bottom: 3%;
 }
-/*
+
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -361,7 +361,7 @@ a:hover{
 	z-index: 9999;
 	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
 }
-*/
+
 
 
 
