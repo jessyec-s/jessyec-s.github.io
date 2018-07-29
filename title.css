@@ -1,14 +1,34 @@
 body{
-	margin:0;
+	
 	font-family: 'Mukta Malar', sans-serif;
 	position:relative;
 	line-height: 1.5;
 	color:#555e60;
 	background-color: #d6ebf2;
+	width:100%;
+	margin:0;
+	
+}
+
+.wrap{
+	margin: 0px auto;
+	max-width: 900px;
+	padding: 0 5%;
 }
 .header img{
 	padding-top:2%;
 	width:15%;
+}
+
+span{
+	font-size: 32px;
+	color:#151718;
+}
+
+.intro{
+	display:block;
+	font-size: 20px;
+	padding-bottom:5px;
 }
 .small,.skill_item_two_small,.skill_item_one_small{
 	display:none;
@@ -21,6 +41,7 @@ body{
 	background-color: white;
 	z-index: 10;
 	color:#333333;
+	font-size:18px;
 }
 .header a{
 	color:#3D9FBF;
@@ -48,12 +69,11 @@ body{
 	color:#151718;
 	letter-spacing: 0.1em;
     font-weight: 600;
-    font-size:1em;
-    padding-left: 10%;
+    font-size: 20px;
 }
 .sub_title{
 	font-weight: 400;
-    font-size:1rem;
+    font-size: 18px;
 	color: #3D9FBF;
 	text-decoration: none;
 	
@@ -64,6 +84,10 @@ body{
 	padding-top:7%;
 	
 }
+
+.skills_category{
+   	padding-top:5px;
+    }
 .skill_item_one{
 	display: flex;
     justify-content: space-around;
@@ -86,7 +110,7 @@ body{
 	padding-top:4%;
 	padding-bottom:4%;
 	padding-right:2%;
-	padding-left: 14%;
+	padding-left: 10%;
 	display:flex;
 
 	justify-content: space-evenly;
@@ -95,7 +119,7 @@ body{
 	color:#245F72;
 	letter-spacing: 0.1em;
     font-weight: 600;
-    font-size:1em;
+    font-size: 20px;
 }
 ul{
 	list-style-type: none;
@@ -107,7 +131,7 @@ ul{
 li{
 	
 	font-weight: 300;
-    font-size:1em;
+    font-size: 16px;
 	margin-top: 3px;
 	margin-bottom:3px;
 }
@@ -124,7 +148,7 @@ p{
 
 p a{
 	font-weight: 600;
-    font-size:1rem;
+    font-size: 20px;
 	color: #3D9FBF;
 	text-decoration: none;
 }
@@ -258,8 +282,8 @@ a:hover{
 	padding-top:5%;
 }
 .job{
-	padding-left:18%;
-	padding-right:18%;
+	padding-left:10%;
+	padding-right:10%;
 	padding-bottom: 2%;
 }
 .job_details{
@@ -270,7 +294,7 @@ a:hover{
 .company a,.project_title,.project_title a{
 	color:#245F72;
     font-weight: 700;
-    font-size:1em;
+    font-size: 20px;
     text-decoration: none;
 }
 .company a:hover{
@@ -283,9 +307,9 @@ a:hover{
 }
 
 .one_project{
-	width:60%;
+
 	margin:auto;
-	padding:2%;
+	padding: 5% 10%;
 }
 
 .GitHub a{
@@ -311,7 +335,7 @@ a:hover{
 	color:#3D9FBF;
 	letter-spacing: 0.1em;
     font-weight: 800;
-    font-size:1.2rem;
+    font-size: 22px;
     text-decoration: none;
 
 }
@@ -322,11 +346,10 @@ a:hover{
 }
 
 .copyright{
-	padding-left:5%;
 	color:#245F72;
 	padding-bottom: 3%;
 }
-
+/*
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -338,7 +361,7 @@ a:hover{
 	z-index: 9999;
 	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
 }
-
+*/
 
 
 
