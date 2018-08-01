@@ -29,7 +29,6 @@ const Item = styled.div`
 
 class SkillItem extends Component {
   render() {
-    console.log (`${JSON.stringify(this.props.SkillItems)}`);
     return (
     <div style= {{paddingTop: '5px'}}>
         <Title>{this.props.Title}</Title>

@@ -10,10 +10,19 @@ const JobWrap = styled.div`
 
 const JobDetails = styled.div`
     display:flex;
+    flex-direction:row;
     justify-content: space-between;
+    @media (max-width: 600px) {
+        flex-direction:column;
+    }
 `;
 
 const Date = styled.div`
+    @media (max-width: 600px) {
+        font-size:14px;
+    }
+    font-size:16px;
+}
 
 `;
 

@@ -5,10 +5,10 @@ import styled from 'styled-components';
 import Skills from './Skill/Skills';
 import TechnicalExperience from './TechnicalExperience/TechnicalExperience';
 import Projects from './Projects/Projects';
-import {ImgOne} from './Images/back_ground_jessye.jpg';
-import {ImgTwo} from './Images/back_ground_music.jpg';
-import {ImgThree} from './Images/back_ground_painting.jpg';
-import {ImgFour} from './Images/back_ground_winter.jpg';
+import ImgOne from './Images/back_ground_jessye.jpg';
+import ImgTwo from './Images/back_ground_music.jpg';
+import ImgThree from './Images/back_ground_painting.jpg';
+import ImgFour from './Images/back_ground_winter.jpg';
 
 
 const Intro = styled.div`
@@ -52,24 +52,44 @@ const CopyRight = styled.div`
 
 const VisibleImg = styled.img`
     position: relative;
-    padding-top:170px;
-    margin-bottom: 0%;
-    margin-left:auto;
+    margin:auto;
     margin-right: auto;
-	width:55vw;
+	width:50vw;
 	border-radius: 50%;
+	padding: 30px;
 `;
 
 
+
 class App extends Component {
+    constructor() {
+        super();
+        this.state = {slideCount: 0, showNextImage: false}
+    }
+    componentDidMount(){
+
+        this.nextSlide();
+
+    }
+
+    nextSlide = () => {
+        console.log ("called")
+        if (this.state.slideCount === 3) {
+          this.setState({ slideCount: 0})
+        } else {
+          this.setState({ slideCount: this.state.slideCount + 1 })
+        }
+
+        setTimeout(this.nextSlide, 2000);
+    }
+
   render() {
     const images = [ImgOne, ImgTwo, ImgThree, ImgFour];
     return (
     <Body>
         <Wrap>
             {images &&
-            images.map(img =>
-            <VisibleImg src ={img} alt={img}/>)
+            images.map((img, index) => <VisibleImg style = {{display: index === this.state.slideCount ? 'block' : 'none' }} src ={img} alt={img}/> )
             }
             <Intro style = {{ display: 'flex', alignItems: 'baseline' }}>
                 <Span>Hello, my name is Jessye.</Span>
