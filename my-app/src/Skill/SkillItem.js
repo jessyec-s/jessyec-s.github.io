@@ -20,6 +20,11 @@ const ItemWrap = styled.div`
 
 `;
 
+const Wrap = styled.div`
+    padding-top: 5px;
+
+`;
+
 const Item = styled.div`
     font-weight: 300;
     font-size: 16px;
@@ -30,7 +35,7 @@ const Item = styled.div`
 class SkillItem extends Component {
   render() {
     return (
-    <div style= {{paddingTop: '5px'}}>
+    <Wrap>
         <Title>{this.props.Title}</Title>
         <ItemWrap>
         {this.props.SkillItems && this.props.SkillItems &&
@@ -39,7 +44,7 @@ class SkillItem extends Component {
             )
         }
         </ItemWrap>
-    </div>
+    </Wrap>
     );
   }
 }
