@@ -16,13 +16,11 @@ const Title = styled.div`
     font-size: 20px;
 `;
 
-const Link = styled.div`
+const Link = styled.a`
 	font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 	color: #3D9FBF;
-	text-decoration: none;
-	padding: 0 10px;
-
+	text-decoration: none;   
     :hover{
         color:#9ccfe0;
     }
@@ -34,7 +32,7 @@ const ProjectTitle = styled.div`
 `;
 
 const GitHub = styled.div`
-
+    width: 100px;
 	font-weight: 700;
 	color:#3D9FBF;
 	padding-top: 10px;
@@ -46,10 +44,7 @@ const GitHub = styled.div`
 
 `;
 const Text = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    padding-bottom: 5px;
+    display: inline-block;
 `;
 
 const TextWrap = styled.div`
@@ -68,14 +63,13 @@ class Projects extends Component {
                 <ProjectTitle>Rollover Prevention Program</ProjectTitle>
                 <TextWrap>
                     <Text>
-                        I am a member of the
-                        <Link onClick={() => window.location.href="http://hpvdt.skule.ca/"}>Human Powered Vehicle Design Team</Link>
+                        I am a member of the <Link onClick={() => window.location.href="http://hpvdt.skule.ca/"}>Human Powered Vehicle Design Team </Link>
                         at the University of Toronto.  Along with another member of the Electronics sub team,
                         I created an Arduino (C) program that notifies a driver when their vehicle is in danger of rolling over.
                     </Text>
                     <Text> I have also worked on improving the accuracy of the team's <Link onClick={() => window.location.href="https://en.wikipedia.org/wiki/Rolling_resistance"}>rolling resistance</Link> test by implementing Hall effect sensors into the test apparatus, which produce more precise speed data.</Text>
 
-                    <Text>Check out last year's speed bike, <Link onClick={() => window.location.href="http://hpvdt.skule.ca/"}>Tempest</Link> - I created the trike's paint design on Solidworks.
+                    <Text>Check out last year's speed bike, <Link onClick={() => window.location.href="http://hpvdt.skule.ca/"}>Tempest </Link> - I created the trike's paint design on Solidworks.
                     </Text>
                 </TextWrap>
             </OneProject>

@@ -12,9 +12,13 @@ import ImgFour from './Images/back_ground_winter.jpg';
 
 
 const Intro = styled.div`
-    display:block;
+    display: inline-block;
     font-size: 20px;
     padding-bottom:5px;
+    
+    @media (max-width: 600px) {
+        padding-bottom:15px;
+    }
 `;
 
 const Wrap = styled.div`
@@ -35,7 +39,7 @@ const Body = styled.div`
 
 `;
 
-const Span = styled.div`
+const Span = styled.span`
     font-size: 32px;
     color:#151718;
 `;
@@ -57,6 +61,11 @@ const VisibleImg = styled.img`
 	width:50vw;
 	border-radius: 50%;
 	padding: 30px;
+	
+    @media (max-width: 800px) {
+        padding:30px 0;
+        width:90vw;
+    }
 `;
 
 
@@ -91,9 +100,8 @@ class App extends Component {
             {images &&
             images.map((img, index) => <VisibleImg style = {{display: index === this.state.slideCount ? 'block' : 'none' }} src ={img} alt={img}/> )
             }
-            <Intro style = {{ display: 'flex', alignItems: 'baseline' }}>
-                <Span>Hello, my name is Jessye.</Span>
-                <div style = {{ paddingLeft: '15px'}}> I love hiking, drawing and eating good food.</div>
+            <Intro>
+                <Span>Hello, my name is Jessye. </Span>I love hiking, drawing and eating good food.
             </Intro>
             <Intro>
                 I am a quick learning gal with a unique mix of analytical and design skills.  I am always up for a challenge, whether it be in a computer lab or on a lake in Algonquin Park.
