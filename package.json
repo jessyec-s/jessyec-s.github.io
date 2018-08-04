@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jessyec-s.github.io/my-app",
+  "homepage": "http://jessyec-s.github.io",
   "dependencies": {
     "consolelog": "^2.1.3",
     "gh-pages": "^1.2.0",
