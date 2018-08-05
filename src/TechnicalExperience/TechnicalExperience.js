@@ -1,14 +1,7 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import TechnicalItem from './TechnicalItem';
 import Resume from '../attachments/resume.pdf'
-
-
-const JobWrap = styled.div`
-    padding-left:10%;
-    padding-right:10%;
-    padding-bottom: 2%;
-`;
 
 const Title = styled.div`
     color:#151718;

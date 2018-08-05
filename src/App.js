@@ -1,5 +1,4 @@
-import React, { Component, Fragment } from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 import styled from 'styled-components';
 import Skills from './Skill/Skills';
@@ -40,11 +39,6 @@ const Body = styled.div`
 `;
 
 const Span = styled.span`
-    font-size: 32px;
-    color:#151718;
-`;
-
-const Title = styled.div`
     font-size: 32px;
     color:#151718;
 `;
