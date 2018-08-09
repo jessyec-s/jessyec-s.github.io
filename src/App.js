@@ -8,6 +8,7 @@ import ImgOne from './Images/back_ground_jessye.jpg';
 import ImgTwo from './Images/back_ground_music.jpg';
 import ImgThree from './Images/back_ground_painting.jpg';
 import ImgFour from './Images/back_ground_winter.jpg';
+import ReactGA from 'react-ga';
 
 
 const Intro = styled.div`
@@ -63,11 +64,12 @@ const VisibleImg = styled.img`
 `;
 
 
-
 class App extends Component {
     constructor() {
         super();
         this.state = {slideCount: 0, showNextImage: false}
+        ReactGA.initialize('UA-123667411-1');
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }
     componentDidMount(){
 
