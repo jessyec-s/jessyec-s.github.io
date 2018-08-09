@@ -10,6 +10,9 @@ import ImgThree from './Images/back_ground_painting.jpg';
 import ImgFour from './Images/back_ground_winter.jpg';
 import ReactGA from 'react-ga';
 
+ReactGA.initialize('UA-123667411-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 const Intro = styled.div`
     display: inline-block;
@@ -68,8 +71,6 @@ class App extends Component {
     constructor() {
         super();
         this.state = {slideCount: 0, showNextImage: false}
-        ReactGA.initialize('UA-123667411-1');
-        ReactGA.pageview(window.location.pathname + window.location.search);
     }
     componentDidMount(){
 
