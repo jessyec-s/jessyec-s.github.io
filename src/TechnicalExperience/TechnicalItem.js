@@ -21,13 +21,13 @@ const Date = styled.div`
     @media (max-width: 600px) {
         font-size:14px;
     }
-    font-size:16px;
+    font-size:18px;
 }
 
 `;
 
 const Position = styled.div`
-
+    font-size: 18px;
 `;
 
 const Company = styled.div`

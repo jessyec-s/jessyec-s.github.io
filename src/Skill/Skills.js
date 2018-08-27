@@ -5,22 +5,22 @@ import styled from 'styled-components';
 
 const SkillWrap = styled.div`
     display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-top:4%;
-    padding-bottom:4%;
-    padding-right:10%;
-    padding-left: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 0;
+    flex-wrap: wrap;
+    
 `;
 
 const CategoryContent = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-left: 40px;
     @media (max-width: 600px) {
         justify-content: space-between;
     }
-    padding-left: 10px;
     flex-grow: 1;
 `;
 
@@ -33,7 +33,11 @@ const SkillTitle = styled.div`
 `;
 
 const SectionWrap = styled.div`
-
+    display: flex;
+    @media (max-width: 600px) {
+        padding-bottom: 20px;
+        flex-direction: column;
+    }
 `;
 
 const PhoneWrap = styled.div`
@@ -42,7 +46,7 @@ const PhoneWrap = styled.div`
     width: 100%;
 `;
 const SkillType = styled.div`
-    color:#245F72;
+    color:#151718;
     letter-spacing: 0.1em;
     font-weight: 600;
     font-size: 20px;
@@ -54,64 +58,34 @@ class Skills extends Component {
   render() {
     const SkillFrontend =[{ item: 'jQuery' }, { item: 'HTML' },{ item: 'CSS' }];
     const SkillHighLevel =[{ item: 'JavasScript' },{ item: 'Ruby' }, { item: 'Python' }];
-    const SkillLowLevel =[{ item: ' C & C++' },{ item: 'SQL' },{ item: 'Verilog' }];
+    const SkillLowLevel =[{item: 'C'}, { item: 'C++' },{ item: 'SQL' },{ item: 'Go' },{ item: 'Assembly' },{ item: 'Verilog' }];
     const OtherLang =[{ item: 'Swift' },{ item: 'MATLAB' }, { item: 'Git' }];
     const Design =[{ item: 'Photoshop' }, { item: 'Illustrator' },{ item: 'InDesign' }];
     const Frameworks=[{ item: 'React' }, { item: 'Spring' },{ item: 'Node' }, { item: 'Wordpress' }];
     const OtherTools =[{ item: 'Postman' }, { item: 'Postico' }];
 
-    const tablet = window.innerWidth < 600;
+    const tablet = window.innerWidth <= 1050 && window.innerWidth >= 600;
 
     return (
-    <Fragment>
-        <SkillTitle>Skills</SkillTitle>
-        <SkillWrap>
-            <SectionWrap>
-                <SkillType>Languages</SkillType>
-                 {!tablet &&
-                 <CategoryContent>
-                   <SkillItem Title= {"Frontend"} SkillItems= {SkillFrontend}/>
-                    <SkillItem Title= {"High-level"} SkillItems= {SkillHighLevel}/>
-                    <SkillItem Title= {"Low-level"} SkillItems= {SkillLowLevel}/>
-                    <SkillItem Title= {"Other"} SkillItems= {OtherLang}/>
-                </CategoryContent>
-                }
-                {tablet &&
-                <CategoryContent>
-                    <PhoneWrap>
-                        <SkillItem Title= {"Frontend"} SkillItems= {SkillFrontend}/>
-                        <SkillItem Title= {"High-level"} SkillItems= {SkillHighLevel}/>
-                     </PhoneWrap>
-                    <PhoneWrap>
-                        <SkillItem Title= {"Low-level"} SkillItems= {SkillLowLevel}/>
-                        <SkillItem Title= {"Other"} SkillItems= {OtherLang}/>
-                    </PhoneWrap>
-                </CategoryContent>
-                }
-            </SectionWrap>
-            <SectionWrap>
-                <SkillType>Tools</SkillType>
-                {!tablet &&
-                <CategoryContent>
-                    <SkillItem Title= {"Design"} SkillItems= {Design}/>
-                    <SkillItem Title= {"Frameworks"} SkillItems= {Frameworks}/>
-                    <SkillItem Title= {"Other"} SkillItems= {OtherTools}/>
-                </CategoryContent>
-                }
-                {tablet &&
-                <CategoryContent>
-                    <PhoneWrap>
-                        <SkillItem Title= {"Design"} SkillItems= {Design}/>
-                        <SkillItem Title= {"Frameworks"} SkillItems= {Frameworks}/>
-                    </PhoneWrap>
-                    <PhoneWrap>
-                        <SkillItem Title= {"Other"} SkillItems= {OtherTools}/>
-                    </PhoneWrap>
-                </CategoryContent>
-                }
-            </SectionWrap>
-        </SkillWrap>
-    </Fragment>
+    <SkillWrap>
+        <SectionWrap>
+            <SkillType>Languages</SkillType>
+             <CategoryContent>
+               <SkillItem Title= {"Frontend"} SkillItems= {SkillFrontend}/>
+                <SkillItem Title= {"High-level"} SkillItems= {SkillHighLevel}/>
+                <SkillItem Title= {"Low-level"} SkillItems= {SkillLowLevel}/>
+                <SkillItem Title= {"Other"} SkillItems= {OtherLang}/>
+            </CategoryContent>
+        </SectionWrap>
+        <SectionWrap style={{ paddingTop: tablet ? '10px' : '0px' }}>
+            <SkillType>Tools</SkillType>
+            <CategoryContent style={{ paddingLeft: tablet ? '95px' : '40px' }}>
+                <SkillItem Title= {"Design"} SkillItems= {Design}/>
+                <SkillItem Title= {"Frameworks"} SkillItems= {Frameworks}/>
+                <SkillItem Title= {"Other"} SkillItems= {OtherTools}/>
+            </CategoryContent>
+        </SectionWrap>
+    </SkillWrap>
     );
   }
 }

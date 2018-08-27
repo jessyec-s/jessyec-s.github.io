@@ -7,29 +7,31 @@ const Title = styled.div`
     font-size: 18px;
     color: #3D9FBF;
     text-decoration: none;
+    padding-right: 5px;
+    min-width: 100px;
 `;
 
 
 const ItemWrap = styled.div`
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     margin:0;
-    padding-top:1rem;
-    padding-bottom: 1rem;
     padding-left: 0;
+    align-items: center;
+    flex-wrap: wrap;
 
 `;
 
 const Wrap = styled.div`
-    padding-top: 5px;
-
+    padding-top: 10px;
+    display:flex;
+    align-content: baseline;
 `;
 
 const Item = styled.div`
     font-weight: 300;
-    font-size: 16px;
-	margin-top: 3px;
-	margin-bottom:3px;
+    font-size: 18px;
+	padding: 0 5px;
 `;
 
 class SkillItem extends Component {
@@ -38,7 +40,7 @@ class SkillItem extends Component {
     <Wrap>
         <Title>{this.props.Title}</Title>
         <ItemWrap>
-        {this.props.SkillItems && this.props.SkillItems &&
+        {this.props.SkillItems &&
             this.props.SkillItems.map(
             item => <Item>{item.item}</Item>
             )

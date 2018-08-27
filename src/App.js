@@ -26,7 +26,7 @@ const Intro = styled.div`
 
 const Wrap = styled.div`
     margin: 0px auto;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 0 5%;
 `;
 
@@ -98,7 +98,7 @@ class App extends Component {
             images.map((img, index) => <VisibleImg style = {{display: index === this.state.slideCount ? 'block' : 'none' }} src ={img} alt={img}/> )
             }
             <Intro>
-                <Span>Hello, my name is Jessye. </Span>I love hiking, drawing and eating good food.
+                <Span>Hello, my name is Jessye. </Span>I love hiking, drawing and playing frisbee.
             </Intro>
             <Intro>
                 I am a quick learning gal with a unique mix of analytical and design skills.  I am always up for a challenge, whether it be in a computer lab or on a lake in Algonquin Park.

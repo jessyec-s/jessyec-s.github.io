@@ -36,15 +36,17 @@ const GitHub = styled.div`
 	font-weight: 700;
 	color:#3D9FBF;
 	padding-top: 10px;
+	font-size: 18px;
 
     :hover{
         color:#9ccfe0;
     }
 
-
 `;
 const Text = styled.div`
     display: inline-block;
+    padding-bottom: 5px;
+    font-size: 18px;
 `;
 
 const TextWrap = styled.div`
@@ -59,18 +61,22 @@ class Projects extends Component {
     <div style = {{paddingTop:'7%'}}>
         <Title>Projects</Title>
         <div style = {{paddingTop:'2%', paddingBottom: '4%'}}>
-            <OneProject>
+            <OneProject>=
                 <ProjectTitle>Rollover Prevention Program</ProjectTitle>
                 <TextWrap>
                     <Text>
                         I am a member of the <Link onClick={() => window.location.href="http://hpvdt.skule.ca/"}>Human Powered Vehicle Design Team </Link>
                         at the University of Toronto.  Along with another member of the Electronics sub team,
                         I created an Arduino (C) program that notifies a driver when their vehicle is in danger of rolling over.
+                        Rollover status and warnings are displayed to a driver through an android app, configured like a dashboard.
                     </Text>
                     <Text> I have also worked on improving the accuracy of the team's <Link onClick={() => window.location.href="https://en.wikipedia.org/wiki/Rolling_resistance"}>rolling resistance</Link> test by implementing Hall effect sensors into the test apparatus, which produce more precise speed data.</Text>
 
-                    <Text>Check out last year's speed bike, <Link onClick={() => window.location.href="http://hpvdt.skule.ca/"}>Tempest </Link> - I created the trike's paint design on Solidworks.
+                    <Text>
+                        Check out last year's speed bike, <Link onClick={() => window.location.href="http://hpvdt.skule.ca/"}>Tempest </Link> - I created the trike's paint design on Solidworks.
                     </Text>
+                    <GitHub onClick={() => window.location.href="https://github.com/jessyec-s/hpvdt_andriod_app"}>GitHub</GitHub>
+
                 </TextWrap>
             </OneProject>
             <OneProject>
