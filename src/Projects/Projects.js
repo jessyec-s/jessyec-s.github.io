@@ -61,7 +61,7 @@ class Projects extends Component {
     <div style = {{paddingTop:'7%'}}>
         <Title>Projects</Title>
         <div style = {{paddingTop:'2%', paddingBottom: '4%'}}>
-            <OneProject>=
+            <OneProject>
                 <ProjectTitle>Rollover Prevention Program</ProjectTitle>
                 <TextWrap>
                     <Text>
