@@ -24,6 +24,11 @@ const Wrap = styled.div`
     display:flex;
     flex-direction: column;
     align-content: baseline;
+    
+    @media (max-width: 630px){
+        width: 47%;
+        margin-right: 5px;
+        margin-bottom: 25px;
 `;
 
 const Item = styled.div`

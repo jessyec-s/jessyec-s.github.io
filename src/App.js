@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import styled from 'styled-components';
+import { Link } from './Shared';
 import Skills from './Skill/Skills';
 import TechnicalExperience from './TechnicalExperience/TechnicalExperience';
 import Background from './Background'
@@ -43,17 +44,7 @@ const Wrap = styled.div`
     padding: 0 5%;
 
 `;
- const Email = styled.a`
-     color:#245F72;
-    font-weight: 700;
-    font-size: 20px;
-    text-decoration: none;
 
-    :hover{
-    	color:#9ccfe0;
-
-    }
- `;
 const Body = styled.div`
 	font-family: 'Mukta Malar', sans-serif;
 	position:relative;
@@ -153,7 +144,7 @@ class App extends Component {
                 <div>
                     <Intro> Hello! </Intro>
                     <Intro>I'm <Span>Jessye Coleman-Shapiro, </Span>an engineering student, artist and outdoor enthusiast.</Intro>
-                    <Intro style={{ fontSize: '20px', paddingBottom: '20px'}}>Get in touch 👉 <Email href="mailto:cjessye@gmail.com">cjessye@gmail.com</Email></Intro>
+                    <Intro style={{ fontSize: '20px', paddingBottom: '20px'}}>Get in touch 👉 <Link href="mailto:cjessye@gmail.com">cjessye@gmail.com</Link></Intro>
                 </div>
             </Header>
             <div style={{ height: '30px'}}/>

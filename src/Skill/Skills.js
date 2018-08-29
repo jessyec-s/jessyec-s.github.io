@@ -26,7 +26,7 @@ class Skills extends Component {
     const SkillBackend =[{item: 'C'}, { item: 'C++' },{ item: 'SQL' },{ item: 'Go' },{ item: 'Assembly' },{ item: 'Verilog' }];
     const Other =[{ item: 'Swift' },{ item: 'MATLAB' }]
     const Frameworks=[{ item: 'React' }, { item: 'Spring' },{ item: 'Node' }, { item: 'Wordpress' }];
-    const Tools =[{ item: 'Postman' }, { item: 'Postico' }, { item: 'Photoshop' }, { item: 'Illustrator' },{ item: 'InDesign' }, { item: 'Git' }];
+    const Tools =[{ item: 'Postman' }, { item: 'Postico' }, { item: 'Photoshop' }, { item: 'Illustrator' }, { item: 'Git' }];
 
     const tablet = window.innerWidth <= 1050 && window.innerWidth >= 600;
 
