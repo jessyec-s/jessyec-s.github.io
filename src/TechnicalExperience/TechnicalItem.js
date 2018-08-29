@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { Link } from '../Shared'
 
 const JobWrap = styled.div`
-    padding-left:10%;
-    padding-right:10%;
     padding-bottom: 2%;
 `;
 
@@ -30,18 +29,6 @@ const Position = styled.div`
     font-size: 18px;
 `;
 
-const Company = styled.div`
-    color:#245F72;
-    font-weight: 700;
-    font-size: 20px;
-    text-decoration: none;
-
-    :hover{
-    	color:#9ccfe0;
-
-    }
-`;
-
 const Resume = styled.div`
     padding-top: 2%;
     color:#3D9FBF;
@@ -61,13 +48,7 @@ class TechnicalItem extends Component {
     return (
     <JobWrap>
         <JobDetails>
-            {!this.props.Resume &&
-            <Company onClick = { () =>
-                window.location.href=this.props.Link
-            }
-            >{this.props.Company}
-            </Company>
-            }
+            {!this.props.Resume && <Link href={this.props.Link}>{this.props.Company}</Link>}
             {!this.props.Resume && <Date>{this.props.Date}</Date>}
             {this.props.Resume &&
             <Resume onClick = { () =>
