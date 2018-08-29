@@ -50,6 +50,7 @@ export const ContentWrap = styled.div`
     @media (max-width: 768px) {
         padding-top: 30px;
         padding-left: 50px;
+        padding-right: 30px;
     }
     
 `;

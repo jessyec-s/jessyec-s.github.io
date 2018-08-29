@@ -14,6 +14,7 @@ import ImgOneSmall from './Images/back_ground_jessye_small.png';
 import ImgTwoSmall from './Images/back_ground_music_small.png';
 import ImgThreeSmall from './Images/back_ground_painting_small.png';
 import ImgFourSmall from './Images/back_ground_winter_small.png';
+import PointingUpEmoji from './Images/pointing_up.png';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-123667411-1');
@@ -63,10 +64,47 @@ const Span = styled.span`
 `;
 
 const CopyRight = styled.div`
-    color:#245F72;
     padding-bottom: 3%;
+    font-weight: 700;
 `;
 
+const PersonalLinks = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+const Footer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    align-items: center;
+    	
+	 @media (max-width: 650px) {
+        flex-direction: column;
+    }
+`;
+
+const FooterLink = styled.a`
+    margin: 0 15px;
+    color:#3D9FBF; 
+    text-decoration: none;
+
+    :hover{
+    	color:#9ccfe0;
+
+    }
+`;
+const TopButton = styled.button`
+    
+    transition: all .2s ease-in-out;
+    background: 0 0;
+    border: none;
+    outline: 0;
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    cursor: pointer;
+`;
 const Header = styled.div`
    height: 100vh;
    max-width: 1440px;
@@ -103,6 +141,8 @@ const VisibleImg = styled.img`
         padding: 0;
     }
 `;
+
+
 
 
 class App extends Component {
@@ -147,14 +187,24 @@ class App extends Component {
                     <Intro style={{ fontSize: '20px', paddingBottom: '20px'}}>Get in touch 👉 <Link href="mailto:cjessye@gmail.com">cjessye@gmail.com</Link></Intro>
                 </div>
             </Header>
-            <div style={{ height: '30px'}}/>
             <Background/>
             <Skills/>
             <TechnicalExperience/>
             <Projects/>
-            <CopyRight>Designed and Developed by<br/>Jessye Coleman-Shapiro 2018</CopyRight>
-
         </Wrap>
+        <Footer>
+            <CopyRight>Designed and Developed by<br/>Jessye Coleman-Shapiro 2018</CopyRight>
+            <PersonalLinks>
+                <FooterLink href="mailto:cjessye@gmail.com">Email</FooterLink>
+                <FooterLink href="https://github.com/jessyec-s">GitHub</FooterLink>
+                <FooterLink href="https://www.linkedin.com/in/jessye-coleman-shapiro-476b3113b/">LinkedIn</FooterLink>
+            </PersonalLinks>
+        </Footer>
+        <TopButton
+            onClick = {() =>  window.scrollTo(0,0) }
+        >
+            <img style={{ width: '30px' }} src={PointingUpEmoji} alt=""/>
+        </TopButton>️
     </Body>
     );
   }
@@ -162,9 +212,3 @@ class App extends Component {
 
 export default App;
 
-{/*<Intro>*/}
-    {/*I am a quick learning gal with a unique mix of analytical and design skills.  I am always up for a challenge, whether it be in a computer lab or on a lake in Algonquin Park.*/}
-{/*</Intro>*/}
-{/*<Intro>*/}
-{/*Right now I am entering my third of Computer Engineering at the University of Toronto.*/}
-{/*</Intro>*/}

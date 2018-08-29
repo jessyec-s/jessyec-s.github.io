@@ -4,7 +4,7 @@ import { ElementWrap, Title, Link, Text, ContentWrap} from '../Shared'
 class Background extends Component {
     render() {
         return (
-            <ElementWrap style={{ paddingTop: '0' }}>
+            <ElementWrap style={{ paddingTop: '20%' }}>
                 <Title>Background</Title>
                 <ContentWrap>
                     <Text>I am currently entering my third year of Computer Engineering at the University of Toronto.
