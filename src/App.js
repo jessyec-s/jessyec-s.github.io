@@ -15,6 +15,7 @@ import ImgTwoSmall from './Images/back_ground_music_small.png';
 import ImgThreeSmall from './Images/back_ground_painting_small.png';
 import ImgFourSmall from './Images/back_ground_winter_small.png';
 import PointingUpEmoji from './Images/pointing_up.png';
+import RightPointerEmoji from './Images/right_pointer.png';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-123667411-1');
@@ -152,14 +153,14 @@ class App extends Component {
             showNextImage: false,
             scrollTop: 0,
             shouldScroll: false,
+            introScreen: null,
         }
     }
     componentWillMount(){
-
         this.nextSlide();
 
     }
-    
+
     nextSlide = () => {
         if (this.state.slideCount === 3) {
           this.setState({ slideCount: 0})
@@ -189,6 +190,12 @@ class App extends Component {
         )
     }
 
+    isInViewport() {
+        if (!this.state.introScreen) return false;
+        const top = this.state.introScreen.getBoundingClientRect().top;
+        return (top > 0);
+    }
+
 
     render() {
     const images = [ImgOne, ImgTwo, ImgThree, ImgFour];
@@ -204,10 +211,13 @@ class App extends Component {
                 {rotator &&
                 rotator.map((img, index) => <VisibleImg style = {{display: index === this.state.slideCount ? 'block' : 'none' }} src ={img} alt={img}/> )
                 }
-                <div>
+                <div ref={(el) => this.state.introScreen? null: this.setState({introScreen:  el})}>
                     <Intro> Hello! </Intro>
                     <Intro>I'm <Span>Jessye Coleman-Shapiro, </Span>an engineering student, artist and outdoor enthusiast.</Intro>
-                    <Intro style={{ fontSize: '20px', paddingBottom: '20px'}}>Get in touch 👉 <Link href="mailto:cjessye@gmail.com">cjessye@gmail.com</Link></Intro>
+                    <Intro style={{ fontSize: '20px', paddingBottom: '20px', display: 'flex'}}>Get in touch
+                        <img style={{ width: '30px', height: '30px', padding: '0 10px'}} src={RightPointerEmoji} alt=""/>
+                        <Link href="mailto:cjessye@gmail.com">cjessye@gmail.com</Link>
+                    </Intro>
                 </div>
             </Header>
             <Background/>
@@ -223,11 +233,13 @@ class App extends Component {
                 <FooterLink href="https://www.linkedin.com/in/jessye-coleman-shapiro-476b3113b/">LinkedIn</FooterLink>
             </PersonalLinks>
         </Footer>
-        <TopButton
-            onClick = {() => this.scrollTop() }
-        >
-            <img style={{ width: '30px' }} src={PointingUpEmoji} alt=""/>
-        </TopButton>️
+        {!this.isInViewport() &&
+            <TopButton
+                onClick={() => this.scrollTop()}
+            >
+                <img style={{width: '30px'}} src={PointingUpEmoji} alt=""/>
+            </TopButton>
+        }
     </Body>
     );
   }
