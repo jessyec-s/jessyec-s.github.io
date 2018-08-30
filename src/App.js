@@ -206,6 +206,7 @@ class App extends Component {
     const imagesSmall = [ImgOneSmall, ImgTwoSmall, ImgThreeSmall, ImgFourSmall];
 
     const tablet = window.innerWidth <= 650;
+    const phone = window.innerWidth <= 450;
     const rotator = tablet ? imagesSmall : images;
 
     return (
@@ -218,8 +219,8 @@ class App extends Component {
                 <div ref={(el) => this.state.introScreen? null: this.setState({introScreen:  el})}>
                     <Intro> Hello! </Intro>
                     <Intro>I'm <Span>Jessye Coleman-Shapiro, </Span>an engineering student, artist and outdoor enthusiast.</Intro>
-                    <Intro style={{ fontSize: '20px', paddingBottom: '20px', display: 'flex'}}>Get in touch
-                        <img style={{ width: '30px', height: '30px', padding: '0 10px'}} src={RightPointerEmoji} alt=""/>
+                    <Intro style={{ fontSize: phone ? '16px': '20px', paddingBottom: '20px', display: 'flex'}}>Get in touch
+                        <img style={{ width: phone ? '20px':'30px', height: phone ? '20px':'30px', padding: '0 10px'}} src={RightPointerEmoji} alt=""/>
                         <Link href="mailto:cjessye@gmail.com">cjessye@gmail.com</Link>
                     </Intro>
                 </div>
