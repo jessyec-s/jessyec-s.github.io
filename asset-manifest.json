@@ -1,11 +1,17 @@
 {
   "main.css": "static/css/main.c17080f1.css",
   "main.css.map": "static/css/main.c17080f1.css.map",
-  "main.js": "static/js/main.a8a3e001.js",
-  "main.js.map": "static/js/main.a8a3e001.js.map",
+  "main.js": "static/js/main.6662554e.js",
+  "main.js.map": "static/js/main.6662554e.js.map",
   "static/media/back_ground_jessye.jpg": "static/media/back_ground_jessye.669d6eac.jpg",
+  "static/media/back_ground_jessye_small.png": "static/media/back_ground_jessye_small.e3e418f6.png",
   "static/media/back_ground_music.jpg": "static/media/back_ground_music.ba723b62.jpg",
+  "static/media/back_ground_music_small.png": "static/media/back_ground_music_small.c55f9ce9.png",
   "static/media/back_ground_painting.jpg": "static/media/back_ground_painting.f07c54c4.jpg",
+  "static/media/back_ground_painting_small.png": "static/media/back_ground_painting_small.994bfdcb.png",
   "static/media/back_ground_winter.jpg": "static/media/back_ground_winter.ec485e42.jpg",
-  "static/media/resume.pdf": "static/media/resume.6dc02b12.pdf"
+  "static/media/back_ground_winter_small.png": "static/media/back_ground_winter_small.97061b72.png",
+  "static/media/pointing_up.png": "static/media/pointing_up.d3404ce5.png",
+  "static/media/resume.pdf": "static/media/resume.6dc02b12.pdf",
+  "static/media/right_pointer.png": "static/media/right_pointer.99e3698a.png"
 }
