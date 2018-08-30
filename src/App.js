@@ -148,16 +148,19 @@ const VisibleImg = styled.img`
 class App extends Component {
     constructor() {
         super();
-        this.state = {slideCount: 0, showNextImage: false}
+        this.state = {slideCount: 0,
+            showNextImage: false,
+            scrollTop: 0,
+            shouldScroll: false,
+        }
     }
-    componentDidMount(){
+    componentWillMount(){
 
         this.nextSlide();
 
     }
-
+    
     nextSlide = () => {
-        console.log ("called")
         if (this.state.slideCount === 3) {
           this.setState({ slideCount: 0})
         } else {
@@ -167,7 +170,27 @@ class App extends Component {
         setTimeout(this.nextSlide, 2000);
     }
 
-  render() {
+    handleScrollTop = () => {
+        if (this.state.scrollTop == 0 ){
+            this.setState({ shouldScroll: false});
+        } else if (this.state.shouldScroll) {
+            const newScrollPosition = window.scrollY- 100;
+
+            this.setState({scrollTop: newScrollPosition >= 0 ? newScrollPosition : 0 });
+            window.scrollTo(0, this.state.scrollTop);
+
+            setTimeout(this.handleScrollTop, 1);
+        }
+    }
+
+    scrollTop = () => {
+        this.setState(
+            { shouldScroll: true , scrollTop: window.scrollY} , () => this.handleScrollTop()
+        )
+    }
+
+
+    render() {
     const images = [ImgOne, ImgTwo, ImgThree, ImgFour];
     const imagesSmall = [ImgOneSmall, ImgTwoSmall, ImgThreeSmall, ImgFourSmall];
 
@@ -201,7 +224,7 @@ class App extends Component {
             </PersonalLinks>
         </Footer>
         <TopButton
-            onClick = {() =>  window.scrollTo(0,0) }
+            onClick = {() => this.scrollTop() }
         >
             <img style={{ width: '30px' }} src={PointingUpEmoji} alt=""/>
         </TopButton>️

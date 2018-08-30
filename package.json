@@ -9,6 +9,7 @@
     "history": "^4.7.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.4.1",
     "react-ga": "^2.5.3",
     "react-router": "^4.3.1",
