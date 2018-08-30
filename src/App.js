@@ -38,6 +38,10 @@ const Intro = styled.div`
     @media (max-width: 650px){
         font-size: 1.75rem;
     }
+    
+    @media (max-width: 450px){
+        font-size: 1.3rem;
+    }
 `;
 
 const Wrap = styled.div`
