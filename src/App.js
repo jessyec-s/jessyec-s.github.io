@@ -81,7 +81,7 @@ const PersonalLinks = styled.div`
 const Footer = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 0px 80px;
+    padding: 0px 80px 20px 80px;
     align-items: center;
     	
 	 @media (max-width: 650px) {

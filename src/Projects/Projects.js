@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { ElementWrap, Text, Title, Link, ContentWrap } from '../Shared'
+import { ElementWrap, Text, Title, Link, ContentWrap } from '../Shared';
+import MapTutorial from '../Images/map_tutorial.gif';
 
 
 const OneProject = styled.div`
@@ -70,7 +71,9 @@ class Projects extends Component {
                         EasyGL software was used to create an intuitive user interface. Key features rendered included a
                         search panel for identifying intersections of interest, route highlighting and detailed directions between locations.
                     </Text>
-
+                    <Text>
+                    <img style={{ width: "100%", borderRadius: '1%' }} src={MapTutorial} alt="gif"/>
+                    </Text>
                 </TextWrap>
             </OneProject>
         </ContentWrap>
