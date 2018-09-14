@@ -17,7 +17,6 @@ const GitHub = styled.div`
     width: 100px;
 	font-weight: 700;
 	color:#3D9FBF;
-	padding-top: 10px;
 	font-size: 18px;
 
     :hover{
@@ -53,14 +52,14 @@ class Projects extends Component {
                         test by implementing Hall effect sensors into the test apparatus, which produce more precise speed data.
                     </Text>
 
-                    <Text>
+                    <Text style={{ paddingBottom: '10px'}}>
                         Check out last year's speed bike, <Link onClick={() => window.location.href="http://hpvdt.skule.ca/"}>Tempest </Link> - I created the trike's paint design on Solidworks.
                     </Text>
                     <GitHub onClick={() => window.location.href="https://github.com/jessyec-s/hpvdt_andriod_app"}>GitHub</GitHub>
 
                 </TextWrap>
             </OneProject>
-            <OneProject>
+            <OneProject style={{paddingTop: '20px'}}>
                 <ProjectTitle>GIS Map</ProjectTitle>
                 <TextWrap>
                     <Text>
