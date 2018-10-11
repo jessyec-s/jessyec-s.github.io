@@ -22,6 +22,7 @@ ReactGA.initialize('UA-123667411-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 
+
 const Intro = styled.div`
     display: inline-block;
     font-size: 2.5rem;
