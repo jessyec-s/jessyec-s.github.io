@@ -7,10 +7,9 @@ class Background extends Component {
             <ElementWrap style={{ paddingTop: '20%' }}>
                 <Title>Background</Title>
                 <ContentWrap>
-                    <Text>I am currently entering my third year of Computer Engineering at the University of Toronto.
-                    Over the last two summers I completed two amazing internships at
-                    <Link href="https://squareup.com/ca"> Square</Link> and<Link href="https://www.helpful.com"> Helpful </Link>
-                    where I developed a wide range of technical and collaborative skills.
+                    <Text>I am currently entering my fourth year of Computer Engineering at the University of Toronto.
+                    I spent my last 16 months working on the OpenJDK team at
+                    <Link href="https://www.redhat.com/en"> Red Hat</Link> in Toronto.
                     </Text>
                     <Text>
                     Having majored in Visual Arts at the Etobicoke School of the Arts high school,
