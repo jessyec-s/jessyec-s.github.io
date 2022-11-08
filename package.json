@@ -14,7 +14,7 @@
     "react-ga": "^2.5.3",
     "react-microlink": "^2.2.4",
     "react-router": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "5.0.1",
     "styled-components": "^3.4.6"
   },
   "scripts": {
