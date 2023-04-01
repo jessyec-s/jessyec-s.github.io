@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="610d097e-f5b4-4443-b9d9-825e17d1855c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Background/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Background/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/Skills.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

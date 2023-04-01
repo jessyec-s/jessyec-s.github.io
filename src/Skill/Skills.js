@@ -22,11 +22,11 @@ const CategoryContent = styled.div`
 class Skills extends Component {
 
   render() {
-    const SkillFrontend =[{ item: 'jQuery' }, { item: 'HTML' },{ item: 'CSS' },{ item: 'JavasScript' },{ item: 'Ruby' },{ item: 'Python' }];
-    const SkillBackend =[{item: 'C'}, { item: 'C++' },{ item: 'SQL' },{ item: 'Go' },{ item: 'Assembly' },{ item: 'Verilog' }];
-    const Other =[{ item: 'Swift' },{ item: 'MATLAB' }]
-    const Frameworks=[{ item: 'React' }, { item: 'Spring' },{ item: 'Node' }, { item: 'Wordpress' }];
-    const Tools =[{ item: 'Postman' }, { item: 'Postico' }, { item: 'Photoshop' }, { item: 'Illustrator' }, { item: 'Git' }];
+    const SkillFrontend =[{ item: 'Typescript' },{ item: 'JavasScript' }, { item: 'HTML' },{ item: 'CSS' }];
+        const SkillBackend =[{ item: 'Python' },{ item: 'Java' }, {item: 'C'}, { item: 'C++' },{ item: 'SQL' },{ item: 'Go' }];
+        const Other =[{ item: 'Datadog' },{ item: 'AWS' },{ item: 'Docker' },{ item: 'Jira' }, { item: 'Linux' }]
+        const Frameworks=[{ item: 'React' },{ item: 'Django' }, { item: 'Spring' },{ item: 'Node' }, { item: 'FastAPI' }];
+        const Tools =[{ item: 'Postman' }, { item: 'Git' }];
 
     const tablet = window.innerWidth <= 1050 && window.innerWidth >= 600;
 
