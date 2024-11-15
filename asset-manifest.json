@@ -1,17 +1,24 @@
 {
-  "main.css": "static/css/main.c17080f1.css",
-  "main.css.map": "static/css/main.c17080f1.css.map",
-  "main.js": "static/js/main.72926bda.js",
-  "main.js.map": "static/js/main.72926bda.js.map",
-  "static/media/back_ground_jessye.jpg": "static/media/back_ground_jessye.669d6eac.jpg",
-  "static/media/back_ground_jessye_small.png": "static/media/back_ground_jessye_small.e3e418f6.png",
-  "static/media/back_ground_music.jpg": "static/media/back_ground_music.ba723b62.jpg",
-  "static/media/back_ground_music_small.png": "static/media/back_ground_music_small.c55f9ce9.png",
-  "static/media/back_ground_painting.jpg": "static/media/back_ground_painting.f07c54c4.jpg",
-  "static/media/back_ground_painting_small.png": "static/media/back_ground_painting_small.994bfdcb.png",
-  "static/media/back_ground_winter.jpg": "static/media/back_ground_winter.ec485e42.jpg",
-  "static/media/back_ground_winter_small.png": "static/media/back_ground_winter_small.97061b72.png",
-  "static/media/pointing_up.png": "static/media/pointing_up.d3404ce5.png",
-  "static/media/resume.pdf": "static/media/resume.ef0256a2.pdf",
-  "static/media/right_pointer.png": "static/media/right_pointer.99e3698a.png"
+  "files": {
+    "main.css": "/static/css/main.f68dbf17.css",
+    "main.js": "/static/js/main.54659980.js",
+    "static/media/back_ground_painting_small.png": "/static/media/back_ground_painting_small.49fb72e62034379ef016.png",
+    "static/media/back_ground_music_small.png": "/static/media/back_ground_music_small.72f789b1718341330141.png",
+    "static/media/back_ground_winter_small.png": "/static/media/back_ground_winter_small.ff49b43a3b45cede7d4b.png",
+    "static/media/back_ground_painting.jpg": "/static/media/back_ground_painting.8e63474c5c039463f2aa.jpg",
+    "static/media/back_ground_music.jpg": "/static/media/back_ground_music.793b8a2c1609c7d703ba.jpg",
+    "static/media/back_ground_jessye.jpg": "/static/media/back_ground_jessye.13bd557fd2001de4a2c3.jpg",
+    "static/media/back_ground_winter.jpg": "/static/media/back_ground_winter.a579506a7dfc2ab8a4ce.jpg",
+    "static/media/back_ground_jessye_small.png": "/static/media/back_ground_jessye_small.e1fe924111e161f5f2b7.png",
+    "static/media/resume.pdf": "/static/media/resume.dac2891bc3efc1592621.pdf",
+    "static/media/pointing_up.png": "/static/media/pointing_up.01e8d98329b5471f952e.png",
+    "static/media/right_pointer.png": "/static/media/right_pointer.0007ee8cfdf499ba26af.png",
+    "index.html": "/index.html",
+    "main.f68dbf17.css.map": "/static/css/main.f68dbf17.css.map",
+    "main.54659980.js.map": "/static/js/main.54659980.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f68dbf17.css",
+    "static/js/main.54659980.js"
+  ]
 }
