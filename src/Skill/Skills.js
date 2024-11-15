@@ -23,9 +23,9 @@ class Skills extends Component {
 
   render() {
     const SkillFrontend =[{ item: 'Typescript' },{ item: 'JavasScript' }, { item: 'HTML' },{ item: 'CSS' }];
-        const SkillBackend =[{ item: 'Python' },{ item: 'Java' }, {item: 'C'}, { item: 'C++' },{ item: 'SQL' },{ item: 'Go' }];
-        const Other =[{ item: 'Datadog' },{ item: 'AWS' },{ item: 'Docker' },{ item: 'Jira' }, { item: 'Linux' }]
-        const Frameworks=[{ item: 'React' },{ item: 'Django' }, { item: 'Spring' },{ item: 'Node' }, { item: 'FastAPI' }];
+        const SkillBackend =[{ item: 'Python' },{ item: 'Java' },{ item: 'Elixir' }, {item: 'C'}, { item: 'C++' },{ item: 'SQL' },{ item: 'Go' }];
+        const Other =[{ item: 'Datadog' },{ item: 'AWS' },{ item: 'Inngest' }, { item: 'Docker' },{ item: 'Jira' }, { item: 'Linux' }]
+        const Frameworks=[{ item: 'NextJS' },{ item: 'React' },{ item: 'Django' }, { item: 'Spring' },{ item: 'Node' }, { item: 'FastAPI' }];
         const Tools =[{ item: 'Postman' }, { item: 'Git' }];
 
     const tablet = window.innerWidth <= 1050 && window.innerWidth >= 600;

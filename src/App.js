@@ -5,7 +5,6 @@ import { Link } from './Shared';
 import Skills from './Skill/Skills';
 import TechnicalExperience from './TechnicalExperience/TechnicalExperience';
 import Background from './Background'
-import Projects from './Projects/Projects';
 import ImgOne from './Images/back_ground_jessye.jpg';
 import ImgTwo from './Images/back_ground_music.jpg';
 import ImgThree from './Images/back_ground_painting.jpg';
@@ -229,7 +228,6 @@ class App extends Component {
             <Background/>
             <Skills/>
             <TechnicalExperience/>
-            <Projects/>
         </Wrap>
         <Footer>
             <CopyRight>Designed and Developed by<br/>Jessye Coleman-Shapiro 2018</CopyRight>
